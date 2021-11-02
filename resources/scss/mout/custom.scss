@@ -1,0 +1,134 @@
+.header-profile-client {
+    height: 50px;
+    width: 50px;
+    background-color: #f6f6f6;
+    padding: 0;
+}
+
+//contact estimation gestion
+div.contact-estimation-container {
+    padding: 15px;
+    margin: 15px;
+    font-size: 14px;
+    background: #d2d8de;
+    border-radius: 10px;
+    cursor: pointer;
+
+    input[type="radio"] {
+        //visibility: hidden;
+        //display: none;
+    }
+
+    & p {
+        margin-bottom: 0;
+
+        &:first-of-type {
+            font-weight: bold;
+        }
+
+        &.text-muted {
+            font-size: 12px;
+        }
+    }
+
+    &.selected {
+        background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+    }
+}
+
+div.mout-accounting-client-informations {
+    & p {
+        margin-bottom: 0;
+    }
+}
+
+div.mout-accounting-thead-details-container {
+    position: relative;
+    margin-bottom: 3em;
+
+    &::after {
+        content: "";
+        width: 98%;
+        position: absolute;
+        bottom: -10px;
+        left: 1%;
+        background-color: #FFFE00;
+        height: 2px;
+    }
+}
+
+div.mout-accounting-body-details-container {
+    margin-bottom: 3em;
+    position: relative;
+
+    & H5.mout-accounting-title-description {
+        font-weight: 700;
+        margin-bottom: 1.5em;
+    }
+
+    & div.mout-accounting-detail-description,
+    div.mout-accounting-detail-quantity,
+    div.mout-accounting-detail-total {
+        font-weight: 300;
+    }
+
+    & div.mout-accounting-detail-quantity,
+    div.mout-accounting-detail-total {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+div.estimation-title-container {
+    position: relative;
+    &::after {
+        content: "";
+        width: 98%;
+        position: absolute;
+        bottom: 40px;
+        left: 1%;
+        background-color: #FFFE00;
+        height: 2px;
+    }
+}
+
+div.mout-accounting-total-container {
+    & p {
+        margin-bottom: 0;
+    }
+}
+
+div.estimation-edit-pen, div.estimation-edit-pen-title, div.advance-edit-total-pen {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 2px;
+    background-color: #000;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 0 auto;
+    cursor: pointer;
+
+    & i {
+        color: #fff;
+    }
+}
+
+div.advance-invoice-container {
+    display: none;
+}
+
+.text-align-right {
+    text-align: right !important;
+}
+
+ul.device-list-group {
+  list-style: none;
+    display: flex;
+    flex-direction: row !important;
+
+    & li {
+        padding-right: 10px;
+    }
+}
